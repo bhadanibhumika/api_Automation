@@ -22,7 +22,9 @@ public class WeatherApiHM {
              .extract()
              .response();
      Assert.assertEquals(response.getStatusCode(),200);
+
      response.prettyPrint();
+
      Assert.assertEquals(response.jsonPath().getDouble("lat"),"-43.9509");
 
 

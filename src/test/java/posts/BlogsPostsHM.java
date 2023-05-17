@@ -18,6 +18,7 @@ public class BlogsPostsHM {
     }
     @Test
     public static void it_should_get_post_by_id_2(){
+
         Response response = given()
                 .basePath("todos")
                 .when()

@@ -16,6 +16,8 @@ public class WeatherApi {
     }
     @Test
     public void it_gets_weather(){
+
+
      ValidatableResponse validatableResponse = given()
                 .baseUri("https://api.openweathermap.org/data/2.5")
                 .basePath("weather")

@@ -13,10 +13,10 @@ public class BlogPosts {
     @BeforeClass
     public static void setUP(){
         RestAssured.baseURI ="https://jsonplaceholder.typicode.com/";
-
     }
     @Test
     public void it_should_get_post_by_id(){
+
         Response response = given()
                 .basePath("posts")
                 .when()
@@ -47,6 +47,7 @@ public class BlogPosts {
     }
     @Test
     public  void it_should_create_new_post(){
+
         Response response = given()
                 .basePath("posts")
                 .contentType(ContentType.JSON)
