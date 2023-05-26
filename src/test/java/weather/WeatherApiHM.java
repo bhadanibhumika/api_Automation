@@ -25,8 +25,8 @@ public class WeatherApiHM {
 
      response.prettyPrint();
 
-     Assert.assertEquals(response.jsonPath().getString("address.geo.lat"),"-43.9509");
-     Assert.assertEquals(response.jsonPath().getString("address.geo.lng"),"-34.4618");
+     Assert.assertEquals(response.jsonPath().getDouble("address.geo.lat"),-43.9509);
+     Assert.assertEquals(response.jsonPath().getDouble("address.geo.lng"),-34.4618);
 
 
  }
